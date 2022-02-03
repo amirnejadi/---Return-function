@@ -1,0 +1,15 @@
+#include<iostream.h>
+#include<conio.h>
+
+int test(int n)
+{
+	if(n<=2)
+	return 1;
+else
+return (test(n-2)+test(n-3));
+}
+int main ()
+{
+	cout<<test(8)<<"\n";
+	return 0;
+}
