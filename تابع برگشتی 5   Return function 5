@@ -1,0 +1,15 @@
+#include<iostream.h>
+#include<conio.h>
+
+int f(int m ,int n)
+{
+	if((m==1) || (n==0) || (m==n))
+	return 1;
+else
+	return (f(m-1,n) + f(m-1 , n-1));
+}
+int main ()
+{
+	cout<<f(3,6)<<"\n";
+	return 0;
+}
